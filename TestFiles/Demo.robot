@@ -1,6 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
-
+Library     AutoRecorder
 
 *** Test Cases ***
 Open Facebook and close the browser
