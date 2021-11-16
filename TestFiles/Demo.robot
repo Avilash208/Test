@@ -2,6 +2,7 @@
 Library  SeleniumLibrary
 #test1
 Library     AutoRecorder
+#test1
 
 *** Test Cases ***
 Open Facebook and close the browser
