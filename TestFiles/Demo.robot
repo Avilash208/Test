@@ -4,6 +4,7 @@ Library  SeleniumLibrary
 Library     AutoRecorder
 #test12
 
+
 *** Test Cases ***
 Open Facebook and close the browser
     Open Facebook for user
@@ -16,6 +17,7 @@ Open Facebook for user
     Open Browser    https://www.facebook.com/   chrome
     Maximize Browser Window
     page should contain image   Facebook
+    log     This is Feature-1 branch
 
 
 Close the browser
