@@ -2,6 +2,7 @@
 Library  SeleniumLibrary
 #test1
 Library     AutoRecorder
+Library     Screenshot
 #test12
 
 
@@ -19,6 +20,8 @@ Open Facebook for user
     Maximize Browser Window
     page should contain image   Facebook
     log     This is Feature-1 branch in master
+    sleep    3s
+    capture page screenshot    Facebook login page.png
 
 
 Close the browser
