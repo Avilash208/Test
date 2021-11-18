@@ -7,6 +7,7 @@ Library     AutoRecorder
 
 *** Test Cases ***
 Open Facebook and close the browser
+    [Tags]  Smoke
     Open Facebook for user
     Close the browser
 
