@@ -3,26 +3,23 @@ Library  SeleniumLibrary
 #test1
 Library     AutoRecorder
 Library     Screenshot
+Resource    ..//Resources/CommonSteps.robot
+Resource    ..//Resources/GlobalVariables.robot
+Resource    ..//Locators/Locators.robot
+Resource    ..//Resources/StepDefination.robot
+#Resource    ..//PageFiles/LoginPage.robot
+Suite Setup  CommonSteps.Initiate Web Test
+Suite Teardown   CommonSteps.Terminate Web Test
+Test Template    StepDefination.Incorrect Credentials
+
+
 #test12
 
 
 *** Test Cases ***
-Open Facebook and close the browser
-    [Tags]  Smoke
-    Open Facebook for user
-    Close the browser
+User provides incorrect username and incorrect password     ${WrongUsername_WrongPassword.wrong_username}     ${WrongUsername_WrongPassword.wrong_password}
 
 
 
-*** Keywords ***
-Open Facebook for user
-    Open Browser    https://www.facebook.com/   chrome
-    Maximize Browser Window
-    page should contain image   Facebook
-    log     This is Feature-1 branch in master
-    sleep    3s
-    capture page screenshot    Facebook login page.png
 
 
-Close the browser
-    Close Browser
