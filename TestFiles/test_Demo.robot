@@ -18,6 +18,8 @@ Test Template    StepDefination.Incorrect Credentials
 
 *** Test Cases ***
 User provides incorrect username and incorrect password     ${WrongUsername_WrongPassword.wrong_username}     ${WrongUsername_WrongPassword.wrong_password}
+User provides correct username and incorrect password     ${WrongUsername_WrongPassword.right_username}     ${WrongUsername_WrongPassword.wrong_password}
+User provides incorrect username and correct password     ${WrongUsername_WrongPassword.wrong_username}     ${WrongUsername_WrongPassword.right_password}
 
 
 
